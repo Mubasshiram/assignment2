@@ -121,3 +121,317 @@ body {
   max-width: 100%;
   height: auto;
 }
+
+
+.section-title {
+text-align: center;
+font-size: 2rem;
+margin-top: 40px;
+margin-bottom: 10px;
+}
+.section-subtitle {
+text-align: center;
+color: #555;
+max-width: 600px;
+margin: 0 auto 30px;
+}
+
+.plant-grid {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 20px;
+max-width: 1200px;
+margin: 0 auto 60px;
+padding: 0 20px;
+}
+
+.plant-card {
+background-color: #fff;
+border: 1px solid #eee;
+text-align: center;
+padding: 15px;
+border-radius: 8px;
+box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.plant-card img {
+max-width: 100%;
+height: auto;
+margin-bottom: 10px;
+}
+
+.plant-card h3 {
+margin: 10px 0 5px;
+font-size: 1.1rem;
+}
+
+.plant-card p {
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.plant-card button {
+background-color: orange;
+color: white;
+border: none;
+padding: 10px 15px;
+border-radius: 4px;
+cursor: pointer;
+font-weight: bold;
+}
+
+.plant-card button:hover {
+background-color: darkorange;
+}
+
+/* Responsive Grid */
+@media screen and (max-width: 576px) {
+.plant-grid {
+grid-template-columns: repeat(2, 1fr);
+}
+}
+
+.plant-lover-section {
+padding: 60px 30px;
+background-color: #f7f9ff;
+}
+
+.plant-lover-box {
+position: relative;
+display: flex;
+gap: 50px;
+max-width: 1168px;
+margin: 0 auto;
+background-color: #fff;
+border: 1px solid #eee;
+border-radius: 8px;
+padding: 50px;
+box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.trusted-badge {
+position: absolute;
+top: -120px;
+left: 65%;
+width: 250px;
+height: 250px;
+z-index: 2;
+}
+
+
+.plant-lover-image {
+flex: 1;
+min-width: 300px;
+position: relative;
+}
+
+.plant-lover-image img {
+width: 100%;
+height: auto;
+border-radius: 8px;
+}
+
+
+.plant-lover-text {
+flex: 1;
+min-width: 300px;
+}
+
+.plant-lover-text h2 {
+font-size: 2rem;
+color: #000;
+margin-bottom: 20px;
+line-height: 1.2;
+}
+
+.plant-lover-text .lover {
+color: #000;
+font-weight: bold;
+}
+
+.plant-lover-text ul {
+list-style: disc inside;
+font-size: 16px;
+color: #555;
+line-height: 1.8;
+padding-left: 20px;
+}
+
+.plant-lover-text ul li {
+margin-bottom: 20px;
+}
+
+/* Responsive */
+@media screen and (max-width: 576px) {
+.plant-lover-box {
+flex-direction: column;
+padding: 20px;
+}
+
+.trusted-badge {
+display: none; 
+}
+
+.plant-lover-image {
+margin-bottom: 20px;
+}
+}
+
+
+body {
+font-family: 'Inter', sans-serif; 
+margin: 0;
+padding: 0;
+}
+
+.latest-deals {
+padding: 40px 40
+
+px; 
+background-color: #f7f9ff;
+text-align: center;
+max-width: 1200px;
+margin: 0 auto; 
+}
+
+.latest-deals h2 {
+font-size: 3rem; 
+margin-bottom: 20px;
+font-weight: bold;
+}
+
+.orange-text {
+color: #f75d00;
+font-weight: bold;
+}
+
+.deal-subtitle {
+max-width: 700px;
+margin: 0 auto 40px;
+color: #555;
+font-size: 18px;
+line-height: 1.8;
+}
+
+/* Main Layout */
+.deal-layout {
+display: flex;
+justify-content: space-between;
+gap: 20px;
+flex-wrap: wrap;
+margin-top: 20px;
+}
+
+.left-column {
+display: flex;
+flex-direction: column;
+gap: 20px;
+flex: 1;
+}
+
+.right-column {
+display: flex;
+flex: 1;
+}
+
+
+.deal-card {
+position: relative;
+width: 100%; 
+height: 220px;
+border-radius: 10px;
+overflow: hidden;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.deal-card img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+filter:blur(2px);
+}
+
+.deal-text {
+position: absolute;
+top: 50%; 
+left: 50%; 
+transform: translate(-50%, -50%); 
+color: #fff;
+text-align: center;
+padding: 20px;
+border-radius: 6px;
+max-width: 90%;
+}
+
+.deal-text h3 {
+margin: 0;
+font-size: 1.3rem; 
+font-weight: 600; 
+}
+
+.deal-text p {
+margin: 5px 0 0;
+font-size: 1.2rem; 
+
+/* Shop Now Underline */
+.deal-text p a {
+color: #fff;
+text-decoration: none;
+border-bottom: 2px solid #fff;
+} 
+
+.left-card {
+display: flex;
+flex-direction: column;
+gap: 20px;
+height: 460px; 
+}
+
+
+.right-column .deal-card {
+height: 460px; 
+}
+
+
+@media screen and (max-width: 576px) {
+.deal-layout {
+flex-direction: column; 
+gap: 20px; 
+}
+
+
+.right-column {
+order: 1; 
+}
+
+.left-column {
+order: 2; 
+flex-direction: column;
+gap: 10px;
+}
+
+
+.deal-card {
+width: 100%; 
+height: 220px; 
+
+.right-column .deal-card {
+height: 220px; 
+}
+
+
+.deal-text {
+font-size: 1rem; 
+}
+
+.deal-text h3 {
+font-size: 1.2rem;
+}
+
+.deal-text p {
+font-size: 1rem; 
+}
+}

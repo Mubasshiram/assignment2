@@ -445,7 +445,7 @@ padding: 0;
 }
 
 .join-section {
-background-image: url('news-letter-bg.png'); 
+background-image: url('../news-letter-bg.png'); 
 background-size: cover;
 background-position: center;
 padding: 80px 20px; 

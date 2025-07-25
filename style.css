@@ -279,161 +279,161 @@ margin-bottom: 20px;
 
 
 body {
-font-family: 'Inter', sans-serif; 
-margin: 0;
-padding: 0;
+  font-family: 'Inter', sans-serif; 
+  margin: 0;
+  padding: 0;
 }
 
 .latest-deals {
-padding: 40px 40
-
-px; 
-background-color: #f7f9ff;
-text-align: center;
-max-width: 1200px;
-margin: 0 auto; 
+  padding: 40px 40px; 
+  background-color: #f7f9ff;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .latest-deals h2 {
-font-size: 3rem; 
-margin-bottom: 20px;
-font-weight: bold;
+  font-size: 3rem; 
+  margin-bottom: 20px;
+  font-weight: bold; 
 }
 
 .orange-text {
-color: #f75d00;
-font-weight: bold;
+  color: #f75d00;
+  font-weight: bold;
 }
 
 .deal-subtitle {
-max-width: 700px;
-margin: 0 auto 40px;
-color: #555;
-font-size: 18px;
-line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #555;
+  font-size: 18px;
+  line-height: 1.8;
 }
 
-/* Main Layout */
+
 .deal-layout {
-display: flex;
-justify-content: space-between;
-gap: 20px;
-flex-wrap: wrap;
-margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .left-column {
-display: flex;
-flex-direction: column;
-gap: 20px;
-flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
 }
 
 .right-column {
-display: flex;
-flex: 1;
+  display: flex;
+  flex: 1;
 }
 
 
 .deal-card {
-position: relative;
-width: 100%; 
-height: 220px;
-border-radius: 10px;
-overflow: hidden;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-display: flex;
-justify-content: center;
-align-items: center;
-
+  position: relative;
+  width: 100%; 
+  height: 220px; 
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 .deal-card img {
-width: 100%;
-height: 100%;
-object-fit: cover;
-filter:blur(2px);
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  filter:blur(2px);
 }
 
 .deal-text {
-position: absolute;
-top: 50%; 
-left: 50%; 
-transform: translate(-50%, -50%); 
-color: #fff;
-text-align: center;
-padding: 20px;
-border-radius: 6px;
-max-width: 90%;
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); /
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  border-radius: 6px;
+  max-width: 90%; 
 }
 
 .deal-text h3 {
-margin: 0;
-font-size: 1.3rem; 
-font-weight: 600; 
+  margin: 0;
+  font-size: 1.3rem; 
+  font-weight: 600; 
 }
 
 .deal-text p {
-margin: 5px 0 0;
-font-size: 1.2rem; 
+  margin: 5px 0 0;
+  font-size: 1.2rem; 
+}
 
-/* Shop Now Underline */
+
 .deal-text p a {
-color: #fff;
-text-decoration: none;
-border-bottom: 2px solid #fff;
-} 
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 2px solid #fff; 
+}
+
 
 .left-card {
-display: flex;
-flex-direction: column;
-gap: 20px;
-height: 460px; 
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 460px;  
 }
 
 
 .right-column .deal-card {
-height: 460px; 
+  height: 460px;  
 }
 
 
 @media screen and (max-width: 576px) {
-.deal-layout {
-flex-direction: column; 
-gap: 20px; 
-}
+  .deal-layout {
+    flex-direction: column; 
+    gap: 20px; 
+  }
 
+ 
+  .right-column {
+    order: 1; 
+  }
 
-.right-column {
-order: 1; 
-}
+  .left-column {
+    order: 2; 
+    flex-direction: column;
+    gap: 10px;
+  }
 
-.left-column {
-order: 2; 
-flex-direction: column;
-gap: 10px;
-}
-
-
-.deal-card {
-width: 100%; 
-height: 220px; 
+  
+  .deal-card {
+    width: 100%;  
+    height: 220px; 
+  }
 
 .right-column .deal-card {
-height: 220px; 
-}
+  height: 220px; 
 
+  
+  .deal-text {
+    font-size: 1rem; 
+  }
 
-.deal-text {
-font-size: 1rem; 
-}
+  .deal-text h3 {
+    font-size: 1.2rem;
+  }
 
-.deal-text h3 {
-font-size: 1.2rem;
-}
-
-.deal-text p {
-font-size: 1rem; 
-}
+  .deal-text p {
+    font-size: 1rem;
+  }
 }
 
